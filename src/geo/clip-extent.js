@@ -57,7 +57,7 @@ function d3_geo_clipExtent(x0, y0, x1, y1) {
             listener.lineEnd();
           }
           if (visible) {
-            d3_geo_clipPolygon(segments, compare, pointInside, interpolate, listener);
+            d3_geo_clipPolygonRejoin(segments, compare, pointInside, interpolate, listener);
           }
           listener.polygonEnd();
         }

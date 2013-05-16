@@ -19,6 +19,7 @@ d3.geo.rotation = function(rotate) {
 };
 
 function d3_geo_identityRotation(λ, φ) {
+  return [λ, φ];
   return [λ > π ? λ - τ : λ < -π ? λ + τ : λ, φ];
 }
 
